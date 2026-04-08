@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dracky Dark World | Upload Arts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="site-brand" href="index.html">
+        <span class="brand-mark">D</span>
+        <span>Dracky Dark World</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Collections</a>
+        <a href="profile.html">Profile</a>
+        <a href="upload.html" aria-current="page">Upload Arts</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <p class="eyebrow">Members Area</p>
+        <h1>Sign up or log in first, then upload artwork to the collections page.</h1>
+        <p class="lead" id="uploadPageNotice">
+          Browsing collections is free. Upload access is reserved for signed-in creators.
+        </p>
+      </section>
+
+      <section class="two-column">
+        <article class="panel-card">
+          <p class="eyebrow">Signup</p>
+          <h2>Create profile</h2>
+          <form class="stack-form" id="signupForm">
+            <label>
+              Full Name
+              <input type="text" id="signupName" placeholder="Enter your full name">
+            </label>
+            <label>
+              Username
+              <input type="text" id="signupUsername" placeholder="dracky_artist">
+            </label>
+            <label>
+              Email
+              <input type="email" id="signupEmail" placeholder="name@example.com">
+            </label>
+            <label>
+              Password
+              <input type="password" id="signupPassword" placeholder="Create password">
+            </label>
+            <button class="button button-primary" type="submit">Sign Up</button>
+            <p class="form-status" id="signupStatus" aria-live="polite"></p>
+          </form>
+        </article>
+
+        <article class="panel-card">
+          <p class="eyebrow">Login</p>
+          <h2>Access upload area</h2>
+          <form class="stack-form" id="loginForm">
+            <label>
+              Username Or Email
+              <input type="text" id="loginUser" placeholder="Username or email">
+            </label>
+            <label>
+              Password
+              <input type="password" id="loginPassword" placeholder="Enter password">
+            </label>
+            <button class="button button-google" type="button" id="googleLoginButton">Login With Google</button>
+            <button class="button button-secondary" type="submit">Login</button>
+            <p class="form-status" id="loginStatus" aria-live="polite"></p>
+          </form>
+        </article>
+      </section>
+
+      <section class="two-column profile-layout">
+        <article class="panel-card profile-card">
+          <p class="eyebrow">Profile Section</p>
+          <div class="profile-badge" id="uploadProfileAvatar">D</div>
+          <h2 id="uploadProfileName">Dark Creator</h2>
+          <p class="profile-handle" id="uploadProfileHandle">@dracky_artist</p>
+          <p id="uploadProfileText">Create an account or log in to unlock professional uploads.</p>
+        </article>
+
+        <article class="panel-card">
+          <p class="eyebrow">Upload Rules</p>
+          <div class="mini-gallery-list">
+            <p>1. Upload portraits, sketching work, fantasy scenes, or user arts.</p>
+            <p>2. Use clear titles and short descriptions for professional presentation.</p>
+            <p>3. Published works will appear on the Collections page automatically.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section gated-upload locked" id="uploadSection">
+        <div class="section-title">
+          <p class="eyebrow">Upload Arts</p>
+          <h2>Professional upload panel with live preview.</h2>
+        </div>
+
+        <div class="two-column">
+          <article class="panel-card">
+            <form class="stack-form" id="artForm">
+              <label>
+                Art Title
+                <input type="text" id="artTitle" placeholder="Midnight Ink">
+              </label>
+              <label>
+                Collection
+                <select id="artCategory">
+                  <option>Portraits</option>
+                  <option>Sketches</option>
+                  <option>Fantasy</option>
+                  <option>User Arts</option>
+                </select>
+              </label>
+              <label>
+                Description
+                <textarea id="artDescription" rows="4" placeholder="Write about your artwork..."></textarea>
+              </label>
+              <label>
+                Upload Image
+                <input type="file" id="artFile" accept="image/*">
+              </label>
+              <button class="button button-primary" type="submit">Upload Art</button>
+              <p class="form-status" id="artStatus" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <article class="panel-card">
+            <p class="eyebrow">Preview</p>
+            <div class="art-preview">
+              <img id="artPreviewImage" src="images/about.jpg" alt="Art preview">
+              <div class="gallery-copy preview-copy">
+                <span id="artPreviewCategory">Portraits</span>
+                <h3 id="artPreviewTitle">Untitled Art</h3>
+                <p id="artPreviewDescription">Your uploaded art preview will appear here before publish.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Dracky Dark World</p>
+      <span>Professional art portfolio, collection hub, and creator upload website.</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

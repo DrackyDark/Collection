@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dracky Dark World | Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="site-brand" href="index.html">
+        <span class="brand-mark">D</span>
+        <span>Dracky Dark World</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Collections</a>
+        <a href="profile.html" aria-current="page">Profile</a>
+        <a href="upload.html">Upload Arts</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <p class="eyebrow">Profile</p>
+        <h1>Your creator identity, upload status, and latest artwork in one place.</h1>
+      </section>
+
+      <section class="two-column profile-layout">
+        <article class="panel-card profile-card">
+          <p class="eyebrow">Creator Profile</p>
+          <div class="profile-badge" id="profileAvatar">D</div>
+          <h2 id="profileName">Dark Creator</h2>
+          <p class="profile-handle" id="profileHandle">@dracky_artist</p>
+          <p id="profileMessage">Sign up on the upload page to activate your creator profile.</p>
+          <div class="metric-stack compact-stack">
+            <div class="metric-card">
+              <span>Upload Access</span>
+              <strong id="profileAccess">Locked</strong>
+            </div>
+            <div class="metric-card">
+              <span>Total Uploads</span>
+              <strong id="profileUploadCount">0</strong>
+            </div>
+          </div>
+          <button class="button button-secondary" id="logoutButton" type="button">Logout</button>
+          <p class="form-status" id="logoutStatus" aria-live="polite"></p>
+        </article>
+
+        <article class="panel-card">
+          <p class="eyebrow">Latest Uploads</p>
+          <div class="mini-gallery-list" id="profileUploads">
+            <p class="empty-note">No uploads yet. Add your portraits, sketches, or fantasy arts from the upload page.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Dracky Dark World</p>
+      <span>Professional art portfolio, collection hub, and creator upload website.</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

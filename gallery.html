@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dracky Dark World | Collections</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="gallery">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="site-brand" href="index.html">
+        <span class="brand-mark">D</span>
+        <span data-global-key="brand_name">Dracky Dark World</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" aria-current="page">Collections</a>
+        <a href="profile.html">Profile</a>
+        <a href="upload.html">Upload Arts</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <p class="eyebrow" data-content-key="hero_eyebrow">Collections</p>
+        <h1 data-content-key="hero_title">Explore dark portrait work, sketches, fantasy art, and uploaded community pieces.</h1>
+      </section>
+
+      <section class="filter-bar" id="galleryFilters">
+        <button class="filter-chip active" type="button" data-filter="all">All</button>
+        <button class="filter-chip" type="button" data-filter="Portraits">Portraits</button>
+        <button class="filter-chip" type="button" data-filter="Sketches">Sketches</button>
+        <button class="filter-chip" type="button" data-filter="Fantasy">Fantasy</button>
+        <button class="filter-chip" type="button" data-filter="User Arts">User Arts</button>
+      </section>
+
+      <section class="gallery-grid" id="artGallery">
+        <article class="gallery-card">
+          <img src="images/about.jpg" alt="Portrait collection art">
+          <div class="gallery-copy">
+            <span>Portraits</span>
+            <h3>Moon Whisper</h3>
+            <p>Detailed portrait work with handwritten textures and symbolic line art.</p>
+          </div>
+        </article>
+
+        <article class="gallery-card">
+          <img src="images/contact.jpg" alt="Sketch collection art">
+          <div class="gallery-copy">
+            <span>Sketches</span>
+            <h3>Silent Mark</h3>
+            <p>Sketchbook-style layouts with raw line energy and dramatic contrast.</p>
+          </div>
+        </article>
+
+        <article class="gallery-card">
+          <img src="images/services.jpg" alt="Fantasy collection art">
+          <div class="gallery-copy">
+            <span>Fantasy</span>
+            <h3>Crimson Gate</h3>
+            <p>Dark world concepts for eerie settings, symbols, and dreamlike scenes.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-global-key="footer_title">Dracky Dark World</p>
+      <span data-global-key="footer_text">Professional art portfolio, collection hub, and creator upload website.</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
